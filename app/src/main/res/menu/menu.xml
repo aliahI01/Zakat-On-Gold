@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/calc"
+        android:title="Calculation"
+        android:textColor="#9A2F43"
+        android:background="#9A2F43" />
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:textColor="#C9867E"
+        android:background="#9A2F43" />
+</menu>

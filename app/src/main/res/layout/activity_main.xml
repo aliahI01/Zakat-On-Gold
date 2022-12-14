@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--android:background="@drawable/background"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gold"
+        android:backgroundTint="#A6F8F7F7"
+        android:backgroundTintMode="multiply"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tvZakat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="30dip"
+            android:layout_marginBottom="30dip"
+            android:fontFamily="serif"
+            android:text="Calculate Your Zakat"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvGoldWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="serif"
+            android:text="Gold Weight"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="356dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/tvZakat"
+            android:layout_marginBottom="20dip"
+            android:background="@drawable/text_cust"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Enter gold weight (g)"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#66040404"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/weight"
+            android:layout_marginTop="15dip"
+            android:layout_marginBottom="5dip"
+            android:fontFamily="serif"
+            android:text="Type of gold"
+            android:textColor="#000000"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvType">
+
+            <RadioButton
+                android:id="@+id/btKeep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Keep"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:buttonTint="@color/black" />
+
+            <RadioButton
+                android:id="@+id/btWear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Wear"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:buttonTint="@color/black" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvCurrentGold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="serif"
+            android:text="Current Gold Value"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/currentValue"
+            android:layout_width="356dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/rgType"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/text_cust"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Current Gold Value (RM)"
+            android:hyphenationFrequency="normal"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#66000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rgType"
+            android:layout_marginTop="60dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/button_cust"
+            android:fontFamily="serif"
+            android:text="Calculate"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/button_cust"
+            android:fontFamily="serif"
+            android:text="reset"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

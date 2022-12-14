@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Zakat on Gold</string>
+    <string name="studName">ALIAH IZZATI ZAMRI</string>
+    <string name="studGroup">RCS2405A</string>
+    <string name="studID">2020490096</string>
+    <string name="copyright">Copyright &#169; 2022</string>
+    <string name="invalid_weight">Fill the gold weight.</string>
+    <string name="invalid_currentValue">Fill the gold current value.</string>
+    <string name="invalid_rgType">Please choose gold type.</string>
+    <string name="weight">Weight</string>
+    <string name="currentvalue">CurrentValue</string>
+    <string name="tvOutput">Zakat Payment</string>
+</resources>
