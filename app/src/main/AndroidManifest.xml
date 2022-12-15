@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".PaymentActivity"
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".AboutActivity"
             android:exported="false" />
